@@ -22,6 +22,8 @@ In this portfolio, you’ll find projects where I’ve:
 **Application config repo:** Stores Kubernetes manifests for deployment and environment configuration
 - https://github.com/rizjosel/petclinic-config
 
+**Docker Registry:** Container registry for storing Docker images
+- https://hub.docker.com/r/rizjosel/petclinic
 ---
 
 ## Tools & Technologies
