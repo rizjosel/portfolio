@@ -17,7 +17,7 @@ In this portfolio, you’ll find projects where I’ve:
 ## Repositories
 
 **Application code repo:** Contains the actual application code) (Java Spring Boot
-- https://github.com/rizjosel/spring-petclinic(forked form [spring projects](https://github.com/spring-projects/spring-petclinic))<br>
+- https://github.com/rizjosel/spring-petclinic (forked form [spring projects](https://github.com/spring-projects/spring-petclinic))<br>
 
 **Application config repo:** Stores Kubernetes manifests for deployment and environment configuration
 - https://github.com/rizjosel/petclinic-config
