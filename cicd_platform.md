@@ -1,4 +1,4 @@
-# DevOps Portfolio – CI/CD Platform on Kubernetes
+# CI/CD Platform on Kubernetes
 
 ## Overview
 Designed and implemented an end-to-end **CI/CD platform** to automate application build, deployment, monitoring, and logging.  
