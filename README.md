@@ -1,15 +1,41 @@
-# 👨‍💻 rizjosel's portfolio
-
 # 👋 Hi, I’m Riz
 
-I’m a DevOps enthusiast with hands-on experience in **CI/CD pipelines, GitOps Argo workflows, and Kubernetes deployments**.  
-I specialize in automating software delivery, managing infrastructure, and deploying applications reliably on Linux-based systems.
+I’m a **DevOps enthusiast** with hands-on experience in **CI/CD pipelines, GitOps workflows with Argo CD, and Kubernetes deployments**.  
 
-In this portfolio, you’ll see projects where I’ve:
+This platform runs on a **self-hosted Kubernetes cluster** provisioned on multiple Ubuntu VMs using VirtualBox on a Windows host. This project emphasizes **hands-on DevOps skills** and infrastructure management.
+
+In this portfolio, you’ll find projects where I’ve:
 
 - Built **CI/CD pipelines using Jenkins**  
 - Deployed applications with **Argo CD and GitOps principles**  
 - Managed **Kubernetes clusters on Ubuntu VMs**  
-- Containerized applications with **Docker**  
+- Containerized applications with **Docker**
 
-I focus on **automation, reliability, and clean infrastructure management**, turning code into production-ready deployments efficiently.
+---
+
+
+## Repositories
+
+**Application code repo:** Contains the actual application code) (Java Spring Boot
+- https://github.com/rizjosel/spring-petclinic(forked form [spring projects](https://github.com/spring-projects/spring-petclinic))<br>
+
+**Application config repo:** Stores Kubernetes manifests for deployment and environment configuration
+- https://github.com/rizjosel/petclinic-config
+
+---
+
+## Tools & Technologies
+- **Version Control:** GitHub  
+- **CI/CD:** Jenkins, Argo CD  
+- **Containers & Orchestration:** Docker, Kubernetes, Helm  
+- **Networking:** Calico (CNI), MetalLB (Load Balancer), NGINX Ingress  
+- **Logging & Monitoring:** Filebeat, Elasticsearch, Kibana, Prometheus, Grafana  
+- **OS & Infrastructure:** Ubuntu, VirtualBox, Windows
+
+---
+
+## Project Documentation
+
+- **CI/CD Platform Overview** → [cicd_platform.md](cicd_platform.md)  
+- **CI/CD & Git Flow Details** → [cicd_gitflow.md](cicd_gitflow.md)  
+- **Platform Screenshots** → [project_screenshots.md](project_screenshots.md)

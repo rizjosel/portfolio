@@ -3,15 +3,9 @@
 The following screenshots provide visual evidence of the CI/CD platform in action, showcasing real-time pipeline execution, monitoring, and logging from the self-hosted Kubernetes environment.
 
 
-## Github:
-
-Application code repo: https://github.com/rizjosel/spring-petclinic(forked form [spring projects](https://github.com/spring-projects/spring-petclinic))<br>
-Application config repo: https://github.com/rizjosel/petclinic-config
-
-### config repo Structure
+## Application config repo Structure
 
 ```text
-.
 ├── README.md
 ├── app
 │   ├── Chart.yaml

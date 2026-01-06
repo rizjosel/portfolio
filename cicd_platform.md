@@ -1,11 +1,5 @@
 # CI/CD Platform on Kubernetes
 
-## Overview
-Designed and implemented an end-to-end **CI/CD platform** to automate application build, deployment, monitoring, and logging.  
-The platform runs on a **self-hosted Kubernetes cluster** provisioned on multiple Ubuntu VMs using VirtualBox on a Windows host. This project emphasizes **hands-on DevOps skills** and infrastructure management.
-
----
-
 ## Architecture Summary
 - **CI/CD Pipeline:** GitHub → Jenkins → Argo CD → Kubernetes
 - **Infrastructure:** 4 Ubuntu VMs on VirtualBox (Windows Host)
@@ -92,15 +86,6 @@ The platform runs on a **self-hosted Kubernetes cluster** provisioned on multipl
   - **MetalLB**: load balancing external traffic  
   - **Ingress**: exposes applications via HTTP/HTTPS
 - **Ngrok** exposes Jenkins URL publicly, enabling GitHub webhooks to trigger builds securely
-
----
-
-## Tools & Technologies
-- **Version Control:** GitHub  
-- **CI/CD:** Jenkins, Argo CD  
-- **Containers & Orchestration:** Docker, Kubernetes  
-- **Logging & Monitoring:** Filebeat, Elasticsearch, Kibana, Prometheus, Grafana  
-- **OS & Infrastructure:** Ubuntu, VirtualBox, Windows
 
 ---
 
