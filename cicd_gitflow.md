@@ -6,20 +6,20 @@ Developer → GitHub Pull Request → Jenkins CI → Merge PR - > Build Docker I
 ```
 
 User submits a PR
-![image](../images/sample-pr.png)
+![image](images/sample-pr.png)
 
 Trigger a Jenkins job(PR checks) via ngrok tunnel<br>
 succesful webhook:
-![image](../images/gh-jenkins-webhook.png)
+![image](images/gh-jenkins-webhook.png)
 
 Triggered Jenkins job:
-![image](../images/pr-ci-checks.png)
+![image](images/pr-ci-checks.png)
 
 Build Docker after merge:
-![image](../images/docker-build.png)
+![image](images/docker-build.png)
 
 Uploaded image tag:
-![image](../images/docker-tag.png)
+![image](images/docker-tag.png)
 
 
 ## Deployment Flow
@@ -27,10 +27,10 @@ Uploaded image tag:
 GitOps Repository → Argo CD → Kubernetes Cluster → Application Exposure
 ```
 Update image tag in application config repo:
-![image](../images/update_image_tag.png)
+![image](images/update_image_tag.png)
 
 Argo CD sync:
-![image](../images/argocd-sync.png)
+![image](images/argocd-sync.png)
 
 Kubernetes deployement:
-![image](../images/kubernetes-changed-tag.png)
+![image](images/kubernetes-changed-tag.png)

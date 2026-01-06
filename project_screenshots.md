@@ -68,21 +68,21 @@ Application config repo: https://github.com/rizjosel/petclinic-config
 ## Projects
 
 ### Jenkins folder:
-![image](../images/jenkins-project-folder.png)
+![image](images/jenkins-project-folder.png)
 
 ### Argo Applications (UI)
-![image](../images/argo%20application.png)
+![image](images/argo%20application.png)
 
 ### Kubernetes pods:
-![image](../images/clusterpods.png)
+![image](images/clusterpods.png)
 
 ### Prometheus
-![image](../images/prometheus.png)
+![image](images/prometheus.png)
 
 ### Grafana/Dashboards
-![image](../images/grafana.png)
-![image](../images/grafana%20dashboard.png)
-![image](../images/grafanadashboard.png)
+![image](images/grafana.png)
+![image](images/grafana%20dashboard.png)
+![image](images/grafanadashboard.png)
 
 ### Kibana
-![image](../images/kibana-elasticsearch%20logs.png)
+![image](images/kibana-elasticsearch%20logs.png)
