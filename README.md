@@ -35,6 +35,18 @@ In this portfolio, you’ll find projects where I’ve:
 - **OS & Infrastructure:** Ubuntu, VirtualBox, Windows
 
 ---
+## Quick Start
+
+1. Provision **4 Ubuntu VMs** on VirtualBox using **Bridged Adapter**
+2. Initialize a **Kubernetes cluster** with `kubeadm` (1 control plane, 2 workers)
+3. Install **Calico** (CNI) and **MetalLB** (LoadBalancer)
+4. Set up **Jenkins** on a dedicated VM and expose it via **Ngrok**
+5. Configure **GitHub webhooks** for PR and push triggers
+6. Deploy **Argo CD** for GitOps-based continuous deployment
+7. Install **Prometheus & Grafana** for monitoring
+8. Deploy **ELK stack** for centralized logging
+
+---
 
 ## Project Documentation
 
