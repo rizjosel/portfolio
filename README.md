@@ -20,7 +20,7 @@ In this portfolio, you’ll find projects where I’ve:
 - https://github.com/rizjosel/spring-petclinic (forked form [spring projects](https://github.com/spring-projects/spring-petclinic))<br>
 
 **Application config repo:** Stores Kubernetes manifests for deployment and environment configuration
-- https://github.com/rizjosel/petclinic-config
+- [https://github.com/rizjosel/petclinic-config/stable](https://github.com/rizjosel/petclinic-config/tree/stable)
 
 **Docker Registry:** Container registry for storing Docker images
 - https://hub.docker.com/r/rizjosel/petclinic
