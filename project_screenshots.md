@@ -6,57 +6,55 @@ The following screenshots provide visual evidence of the CI/CD platform in actio
 ## Application config repo Structure
 
 ```text
+.
 ├── README.md
 ├── app
-│   ├── Chart.yaml
-│   ├── templates
-│   │   ├── _helpers.tpl
-│   │   ├── deployment.yaml
-│   │   ├── hpa.yaml
-│   │   ├── ingress.yaml
-│   │   ├── namespace.yaml
-│   │   └── service.yaml
-│   └── values.yaml
-├── argo
-│   ├── elasticsearch.yaml
-│   ├── filebeat.yaml
-│   ├── grafana.yaml
-│   ├── jenkins.yaml
-│   ├── kibana.yaml
-│   ├── metallb.yaml
-│   ├── petclinic.yaml
-│   └── prometheus.yaml
+│   ├── Chart.yaml
+│   ├── templates
+│   │   ├── _helpers.tpl
+│   │   ├── deployment.yaml
+│   │   ├── hpa.yaml
+│   │   ├── ingress.yaml
+│   │   ├── namespace.yaml
+│   │   └── service.yaml
+│   └── values.yaml
 ├── logging
-│   ├── elasticsearch
-│   │   ├── deployment.yaml
-│   │   └── service.yaml
-│   ├── filebeat
-│   │   ├── configmap.yaml
-│   │   ├── daemonset.yaml
-│   │   ├── namespace.yaml
-│   │   └── rbac.yaml
-│   └── kibana
-│       ├── deployment.yaml
-│       ├── ingress.yaml
-│       └── service.yaml
-├── metallb
-│   ├── metallb-ipaddresspool.yaml
-│   └── metallb-l2advertisement.yaml
-└── monitoring
-    ├── grafana
-    │   ├── configmap.yaml
-    │   ├── deployment.yaml
-    │   ├── ingress.yaml
-    │   ├── namespace.yaml
-    │   └── service.yaml
-    └── prometheus
-        ├── configmap.yaml
-        ├── deployment.yaml
-        ├── ingress.yaml
-        ├── namespace.yaml
-        ├── node_exporter.yaml
-        ├── rbac.yaml
-        └── service.yaml
+│   ├── elasticsearch
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── filebeat
+│   │   ├── configmap.yaml
+│   │   ├── daemonset.yaml
+│   │   ├── namespace.yaml
+│   │   └── rbac.yaml
+│   └── kibana
+│       ├── deployment.yaml
+│       ├── ingress.yaml
+│       └── service.yaml
+├── monitoring
+│   ├── grafana
+│   │   ├── configmap.yaml
+│   │   ├── deployment.yaml
+│   │   ├── ingress.yaml
+│   │   ├── namespace.yaml
+│   │   └── service.yaml
+│   └── prometheus
+│       ├── configmap.yaml
+│       ├── deployment.yaml
+│       ├── ingress.yaml
+│       ├── namespace.yaml
+│       ├── node_exporter.yaml
+│       ├── rbac.yaml
+│       └── service.yaml
+└── terraform
+    └── argo
+        ├── main.tf
+        ├── modules
+        │   ├── main.tf
+        │   └── varriables.tf
+        ├── providers.tf
+        ├── terraform.tfstate
+        └── terraform.tfstate.backup
 ```
 
 ## Projects
