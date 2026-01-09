@@ -6,10 +6,13 @@ This platform runs on a **self-hosted Kubernetes cluster** provisioned on multip
 
 In this portfolio, you’ll find projects where I’ve:
 
-- Built **CI/CD pipelines using Jenkins**  
-- Deployed applications with **Argo CD and GitOps principles**  
-- Managed **Kubernetes clusters on Ubuntu VMs**  
-- Containerized applications with **Docker**
+- Built **CI/CD pipelines** using **Jenkins**
+- Deployed applications using **Argo CD** following **GitOps principles**
+- Managed **Argo CD Applications with Terraform** using reusable modules
+- Provisioned and managed **Kubernetes clusters** on **Ubuntu VMs**
+- Containerized applications using **Docker**
+- Integrated **Helm charts** and Kubernetes manifests for application delivery
+
 
 ---
 
@@ -37,17 +40,6 @@ In this portfolio, you’ll find projects where I’ve:
 
 
 ---
-## Quick Start
-
-1. Provision **4 Ubuntu VMs** on VirtualBox using **Bridged Adapter**
-2. Initialize a **Kubernetes cluster** with `kubeadm` (1 control plane, 2 workers)
-3. Install **Calico** (CNI) and **MetalLB** (LoadBalancer)
-4. Set up **Jenkins** on a dedicated VM and expose it via **Ngrok**
-5. Configure **GitHub webhooks** for PR and push triggers
-6. Deploy **Argo CD** for GitOps-based continuous deployment
-7. Install **Prometheus & Grafana** for monitoring
-8. Deploy **ELK stack** for centralized logging
-
 ## Quick Start
 
 - Provision **4 Ubuntu virtual machines** on **VirtualBox** using a **Bridged Adapter**
