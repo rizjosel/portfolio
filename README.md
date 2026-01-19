@@ -52,7 +52,7 @@ In this portfolio, you’ll find projects where I’ve:
 - **Logging:** Filebeat → Elasticsearch → Kibana
 - **Monitoring:** Prometheus → Grafana
 
-![image](images/architecture.png)
+![image](images/architecture2.png)
 
 ---
 
