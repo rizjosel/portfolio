@@ -5,21 +5,13 @@
 - **Infrastructure:** 4 Ubuntu VMs on VirtualBox (Windows Host)
 - **Infrastructure as Code:** Terraform (Argo CD Application Management)
 - **Container Orchestration:** Kubernetes
-- **GitOps:** Argo CD
+- **GitOps:** 
+  - **Argo CD:** Monitors observability and monitoring applications (Prometheus, Grafana, ELK stack)
+  - **Flux CD:** Monitors application deployments
 - **Logging:** Filebeat → Elasticsearch → Kibana
 - **Monitoring:** Prometheus → Grafana
 
----
-
-## Infrastructure Setup
-- Host OS: **Windows**
-- Virtualization: **VirtualBox**
-- Virtual Machines:
-  - 4 × Ubuntu Linux VMs
-- Kubernetes Cluster:
-  - 1 Control Plane Node
-  - 2 Worker Nodes
-- Networking configured using **Bridged Adapter** mode in VirtualBox to enable inter-VM and host-to-VM communication
+![image](images/architecture.png)
 
 ---
 
@@ -57,6 +49,8 @@
 - Terraform **does not deploy workloads directly**
   - Argo CD remains the single source of truth for Kubernetes state
 
+### 5. FluxCD (Application Management)
+- Ensures your cluster is always in sync with Git (the single source of truth)
 ---
 
 ## Kubernetes Deployment
