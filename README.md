@@ -40,19 +40,19 @@ In this portfolio, you’ll find projects where I’ve:
 
 
 ---
-## Quick Start
 
-- Provision **4 Ubuntu virtual machines** on **VirtualBox** using a **Bridged Adapter**
-- Initialize a **Kubernetes cluster with kubeadm**
-- Install **Calico** as the CNI for pod networking
-- Install **MetalLB** to enable `LoadBalancer` services in the on-prem cluster
-- Set up **Jenkins** on a dedicated VM and expose it securely using **Ngrok**
-- Configure **GitHub Webhooks** to trigger pipelines on **push and pull request** events
-- Deploy **Argo CD** inside the Kubernetes cluster for **GitOps-based continuous deployment**
-- Use **Terraform to manage Argo CD Applications**
-- Install **Prometheus and Grafana** for cluster and application monitoring
-- Deploy the **ELK Stack (Elasticsearch, Logstash/Filebeat, Kibana)** for centralized logging and observability
+## Architecture Summary
+- **CI/CD Pipeline:** GitHub → Jenkins → Argo CD → Kubernetes
+- **Infrastructure:** 4 Ubuntu VMs on VirtualBox (Windows Host)
+- **Infrastructure as Code:** Terraform (Argo CD Application Management)
+- **Container Orchestration:** Kubernetes
+- **GitOps:** 
+  - **Argo CD:** Monitors observability and monitoring applications (Prometheus, Grafana, ELK stack)
+  - **Flux CD:** Monitors application deployments
+- **Logging:** Filebeat → Elasticsearch → Kibana
+- **Monitoring:** Prometheus → Grafana
 
+![image](images/architecture.png)
 
 ---
 
