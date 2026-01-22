@@ -49,8 +49,13 @@
 - Terraform **does not deploy workloads directly**
   - Argo CD remains the single source of truth for Kubernetes state
 
-### 5. FluxCD (Application Management)
-- Ensures your cluster is always in sync with Git (the single source of truth)
+### 5. FluxCD (Application Workload Management)
+
+- FluxCD is used to manage actual application workloads, such as the production website and backend services.
+
+- It continuously reconciles Helm releases and Kubernetes manifests from Git, ensuring that application deployments, configuration, and scaling behavior always match the declared state.
+
+- FluxCD operates at the application layer, while Argo CD is reserved for platform and observability stacks.
 ---
 
 ## Kubernetes Deployment
