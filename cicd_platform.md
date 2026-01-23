@@ -8,8 +8,9 @@
 - Install **MetalLB** to enable `LoadBalancer` services in the on-prem cluster
 - Set up **Jenkins** on a dedicated VM and expose it securely using **Ngrok**
 - Configure **GitHub Webhooks** to trigger pipelines on **push and pull request** events
-- Deploy **Argo CD** inside the Kubernetes cluster for **GitOps-based continuous deployment**
-- Use **Terraform to manage Argo CD Applications**
+- Deploy **Argo CD** inside the Kubernetes cluster to manage **observability applications** (e.g., logging, monitoring)
+- Use **Terraform** to manage **Argo CD Application resources** as reusable modules, with state stored in an **encrypted S3 backend**
+- Deploy **FluxCD** to manage **application workloads**, continuously reconciling Helm releases and manifests from Git
 - Install **Prometheus and Grafana** for cluster and application monitoring
 - Deploy the **ELK Stack (Elasticsearch, Logstash/Filebeat, Kibana)** for centralized logging and observability
 
@@ -48,6 +49,7 @@
   - Avoid manual drift in Argo CD UI
 - Terraform **does not deploy workloads directly**
   - Argo CD remains the single source of truth for Kubernetes state
+- Terraform state is stored in an **encrypted S3 backend** for centralized, version-controlled, and reproducible infrastructure management
 
 ### 5. FluxCD (Application Workload Management)
 
@@ -64,6 +66,7 @@
   - Services
   - ConfigMaps
   - Ingress
+  - Persistent Volumes
 - Namespaces are isolated per application to avoid resource conflicts
 
 ---
@@ -107,17 +110,3 @@
 - Migrate infrastructure to **cloud platforms (e.g., AWS)**
 - Add **Alerting and Notifications** using Alertmanager
 - Secure the cluster with **RBAC and Network Policies**
-- Enhance Grafana dashboards for **application-level metrics**
-- Implement **Persistent Volumes** for stateful workloads
-- Introduce **multi-environment Argo CD applications** using Terraform modules
-
----
-
-## Why This Design
-- Cost-effective, hands-on on-prem Kubernetes setup
-- Clear separation of responsibilities:
-  - Terraform → Argo CD application lifecycle
-  - Argo CD → Kubernetes state reconciliation
-  - Jenkins → Continuous Integration
-- Follows modern **enterprise GitOps patterns**
-- Demonstrates real-world DevOps tooling integration

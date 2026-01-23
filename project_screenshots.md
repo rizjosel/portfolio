@@ -105,3 +105,10 @@ The following screenshots provide visual evidence of the CI/CD platform in actio
 
 ### Kibana
 ![image](images/kibana-elasticsearch%20logs.png)
+
+### Flux
+![image](images/flux_reources.png)
+
+### Terraform
+![image](images/terraformstate_s3.png)
+![image](images/dynamydb_statelock2.png)
