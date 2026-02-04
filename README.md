@@ -61,3 +61,8 @@ In this portfolio, you’ll find projects where I’ve:
 - **CI/CD Platform Overview** → [cicd_platform.md](cicd_platform.md)  
 - **CI/CD & Git Flow Details** → [cicd_gitflow.md](cicd_gitflow.md)  
 - **Platform Screenshots** → [project_screenshots.md](project_screenshots.md)
+
+
+## Other Projects
+- eks - https://github.com/rizjosel/cicd-platform-aws 
+- cdk - https://github.com/rizjosel/cdk-python
