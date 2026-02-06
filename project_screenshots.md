@@ -112,3 +112,7 @@ The following screenshots provide visual evidence of the CI/CD platform in actio
 ### Terraform
 ![image](images/terraformstate_s3.png)
 ![image](images/dynamydb_statelock2.png)
+
+### Sonarqube
+![image](images/jenkins-sonarqube.png)
+![image](images/sonarqube1.png)
