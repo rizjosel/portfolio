@@ -30,17 +30,24 @@
   - Checkout code from GitHub
   - Trigger builds on **PR creation or updates**
   - Run automated tests as part of **PR validation**
-  - Report build/test status back to GitHub
+  - Run **SonarQube analysis** for code quality and security checks
+  - Report build/test and code quality status back to GitHub
   - Build Docker images **after PR merge** into the main branch
   - Push images to the container registry (**Docker Hub**)
 
-### 3. Argo CD (Continuous Deployment)
+### 3. SonarQube (Code Quality & Compliance)
+- Integrated into Jenkins CI pipelines
+- Provides **static code analysis**, detects bugs, vulnerabilities, and code smells
+- Ensures that only high-quality code is merged into main branches
+- Dashboards provide team-wide visibility into code health
+
+### 4. Argo CD (Continuous Deployment)
 - Deployed inside the Kubernetes cluster
 - GitOps-based deployment model
 - Automatically syncs Kubernetes manifests from GitHub
 - Ensures the cluster state continuously matches the desired state
 
-### 4. Terraform (Argo CD Application Management)
+### 5. Terraform (Argo CD Application Management)
 - Terraform is used to **manage Argo CD Application resources**
 - Argo CD applications are defined as **reusable Terraform modules**
 - Responsibilities:
@@ -51,13 +58,11 @@
   - Argo CD remains the single source of truth for Kubernetes state
 - Terraform state is stored in an **encrypted S3 backend** for centralized, version-controlled, and reproducible infrastructure management
 
-### 5. FluxCD (Application Workload Management)
+### 6. FluxCD (Application Workload Management)
+- FluxCD is used to manage actual application workloads, such as the production website and backend services
+- Continuously reconciles Helm releases and Kubernetes manifests from Git, ensuring that application deployments, configuration, and scaling behavior always match the declared state
+- FluxCD operates at the application layer, while Argo CD is reserved for platform and observability stacks
 
-- FluxCD is used to manage actual application workloads, such as the production website and backend services.
-
-- It continuously reconciles Helm releases and Kubernetes manifests from Git, ensuring that application deployments, configuration, and scaling behavior always match the declared state.
-
-- FluxCD operates at the application layer, while Argo CD is reserved for platform and observability stacks.
 ---
 
 ## Kubernetes Deployment

@@ -42,17 +42,19 @@ This platform runs on a self-hosted Kubernetes cluster provisioned across multip
 ---
 
 ## Architecture Summary
-- **CI/CD Pipeline:** GitHub → Jenkins → Argo CD → Kubernetes
+
+- **CI/CD Pipeline:** GitHub → Jenkins → SonarQube → Argo CD → Kubernetes
 - **Infrastructure:** 4 Ubuntu VMs on VirtualBox (Windows Host)
 - **Infrastructure as Code:** Terraform (Argo CD Application Management)
 - **Container Orchestration:** Kubernetes
 - **GitOps:** 
-  - **Argo CD:** Monitors observability and monitoring applications (Prometheus, Grafana, ELK stack)
+  - **Argo CD:** Monitors observability and monitoring applications (Prometheus, Grafana, ELK Stack)
   - **Flux CD:** Monitors application deployments
 - **Logging:** Filebeat → Elasticsearch → Kibana
 - **Monitoring:** Prometheus → Grafana
+- **Code Quality & Compliance:** SonarQube for static code analysis and automated feedback
 
-![image](images/architecture2.png)
+![image](images/architecture3.png)
 
 ---
 

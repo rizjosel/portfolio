@@ -1,4 +1,4 @@
-this is outdated
+# this is outdated
 # CI/CD & GitOps Flow
 
 ## Code Flow
