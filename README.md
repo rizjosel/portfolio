@@ -1,17 +1,22 @@
 # 👋 Hi, I’m Riz
 
-I’m a **DevOps enthusiast** with hands-on experience in **CI/CD pipelines, GitOps workflows with Argo CD, and Kubernetes deployments**.  
+I’m a DevOps enthusiast with hands-on experience in CI/CD pipelines, GitOps workflows with Argo CD and FluxCD, and Kubernetes deployments. My portfolio demonstrates practical expertise in building and managing on-prem infrastructure, automating deployments, and implementing observability and monitoring solutions.
 
-This platform runs on a **self-hosted Kubernetes cluster** provisioned on multiple Ubuntu VMs using VirtualBox on a Windows host. This project emphasizes **hands-on DevOps skills** and infrastructure management.
+This platform runs on a self-hosted Kubernetes cluster provisioned across multiple Ubuntu VMs on VirtualBox using a Bridged Adapter. It emphasizes end-to-end DevOps skills, from infrastructure provisioning to application delivery.
 
-In this portfolio, you’ll find projects where I’ve:
+## Key Projects & Skills
 
-- Built **CI/CD pipelines** using **Jenkins**
-- Deployed applications using **Argo CD** following **GitOps principles**
-- Managed **Argo CD Applications with Terraform** using reusable modules
-- Provisioned and managed **Kubernetes clusters** on **Ubuntu VMs**
-- Containerized applications using **Docker**
-- Integrated **Helm charts** and Kubernetes manifests for application delivery
+- **CI/CD & Automation:** Built pipelines with Jenkins, triggered via GitHub Webhooks, and securely exposed with Ngrok.
+
+- **GitOps & Application Delivery:** Deployed and managed applications using Argo CD and FluxCD, leveraging Terraform modules for reusable Argo CD Application resources with encrypted S3 backend state.
+
+- **Kubernetes Infrastructure:** Provisioned clusters using kubeadm on Ubuntu VMs, configured Calico CNI for networking, and MetalLB for LoadBalancer services.
+
+- **Containerization & Orchestration:** Containerized applications using Docker and deployed them via Helm charts and Kubernetes manifests.
+
+- **Observability & Monitoring:** Implemented Prometheus, Grafana, and the ELK Stack (Elasticsearch, Logstash/Filebeat, Kibana) for logging and metrics.
+
+- **Quality & Compliance:** Integrated SonarQube for continuous code quality analysis and automated feedback.
 
 
 ---
