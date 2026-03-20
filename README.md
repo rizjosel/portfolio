@@ -53,7 +53,7 @@ GitHub → Jenkins → SonarQube → Argo CD → Kubernetes
 
 ---
 
-## 🚀 Ongoing Enhancements & Growth
+## Ongoing Enhancements & Growth
 
 - Extend Prometheus to monitor **pod-level metrics**  
 - Deploy Jenkins **inside the Kubernetes cluster**  
