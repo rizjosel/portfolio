@@ -40,9 +40,6 @@ GitHub → Jenkins → SonarQube → Argo CD → Kubernetes
 - **Application Code:** [spring-petclinic](https://github.com/rizjosel/spring-petclinic)  
 - **Config Repo:** [petclinic-config](https://github.com/rizjosel/petclinic-config)  
 - **Docker Registry:** [Docker Hub: rizjosel/petclinic](https://hub.docker.com/r/rizjosel/petclinic)  
-- **Other Projects:**  
-  - [cicd-platform-aws](https://github.com/rizjosel/cicd-platform-aws)  
-  - [cdk-python](https://github.com/rizjosel/cdk-python)
 
 ---
 
