@@ -7,15 +7,10 @@ This platform runs on a self-hosted Kubernetes cluster provisioned across multip
 ## Key Projects & Skills
 
 - **CI/CD & Automation:** Built pipelines with Jenkins, triggered via GitHub Webhooks, and securely exposed with Ngrok.
-
 - **GitOps & Application Delivery:** Deployed and managed applications using Argo CD and FluxCD, leveraging Terraform modules for reusable Argo CD Application resources with encrypted S3 backend state.
-
 - **Kubernetes Infrastructure:** Provisioned clusters using kubeadm on Ubuntu VMs, configured Calico CNI for networking, and MetalLB for LoadBalancer services.
-
 - **Containerization & Orchestration:** Containerized applications using Docker and deployed them via Helm charts and Kubernetes manifests.
-
 - **Observability & Monitoring:** Implemented Prometheus, Grafana, and the ELK Stack (Elasticsearch, Logstash/Filebeat, Kibana) for logging and metrics.
-
 - **Quality & Compliance:** Integrated SonarQube for continuous code quality analysis and automated feedback.
 
 
