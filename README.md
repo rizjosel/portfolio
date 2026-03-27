@@ -25,7 +25,7 @@ GitHub, Jenkins, SonarQube, Argo CD, FluxCD, Terraform, Docker, Kubernetes, Helm
 ## Architecture Summary
 
 **Pipeline & Infrastructure Overview:**  
-GitHub → Jenkins → SonarQube → Argo CD → Kubernetes  
+GitHub → Jenkins → SonarQube → Argo CD/FluxCD → Kubernetes  
 
 - 4 Ubuntu VMs on VirtualBox (Windows host)  
 - Argo CD manages observability applications; FluxCD manages workloads  
